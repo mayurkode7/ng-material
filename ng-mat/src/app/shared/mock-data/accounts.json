@@ -1,0 +1,14 @@
+{
+    "fixed": {
+        "code": 1001,
+        "type": "permanant"
+    },
+    "recurring": {
+        "code": 2001,
+        "type": "temp"
+    },
+    "other": {
+        "code": 3001,
+        "type": "NA"
+    }
+}
