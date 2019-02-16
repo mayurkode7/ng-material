@@ -1,1 +1,0 @@
-New angular project with multiple scenarios
