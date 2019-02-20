@@ -11,6 +11,7 @@ export class OnboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('title: ', this.title);
   }
 
 }
