@@ -13,6 +13,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HttpClientJsonpModule
   ],
   declarations: [SharedComponent, HeaderComponent, FooterComponent, PageNotFoundComponent],
-  exports : [ SharedComponent , HeaderComponent, FooterComponent, PageNotFoundComponent]
+  exports: [SharedComponent,
+    HeaderComponent,
+    FooterComponent,
+    PageNotFoundComponent, HttpClientJsonpModule, HttpClientModule]
 })
 export class SharedModule { }

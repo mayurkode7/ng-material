@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { OnboardComponent } from './sections/onboard/onboard.component';
+import { AccountsService } from './services/accounts.service';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { OnboardComponent } from './sections/onboard/onboard.component';
         AppRoutingModule,
         SharedModule
     ],
-    providers: [],
+    providers: [AccountsService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
