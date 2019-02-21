@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRouteSnapshot, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-onboard',
@@ -8,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class OnboardComponent implements OnInit {
 
   title = 'Onboard';
-  constructor() { }
+  accounts: any;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    console.log('onboard title: ', this.title);
+
+    this.accounts = this.route.snapshot.data;
+
+    console.log('accounts: ', this.accounts);
+
   }
 
 }
